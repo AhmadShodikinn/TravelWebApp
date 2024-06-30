@@ -6,7 +6,14 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'poppins': ['Poppins'],
+   },
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/public/img/bg-bromo.png')",
+      }
+    },
   },
   plugins: [],
 }
