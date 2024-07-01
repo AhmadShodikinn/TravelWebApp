@@ -7,7 +7,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'poppins': ['Poppins'],
+      poppins: ['Poppins', 'sans-serif'],
+      ibarra: ['Ibarra Real Nova', 'serif'],
    },
     extend: {
       backgroundImage: {
