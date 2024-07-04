@@ -277,28 +277,39 @@
     <!-- Fleet -->
     <div class="py-16 sm:py-16 pt-60 bg-center" style="background-image: url('/img/bg-vector.svg');">
         <h2 class="text-center text-3xl font-bold tracking-tight text-[#24565C] sm:text-3xl">ARMADA KAMI</h2>
-        <div class="carousel rounded-lg">
-            <div class="carousel-item h-[650px] max-w-none">
+        <div class="px-44">
+
+            <div class="carousel rounded-lg py-8">
+                <div class="carousel-item h-[500px] max-w-none">
                 <img
                 src="{{ asset('img/car-image/slider-1.svg') }}"/>
             </div>
-            <div class="carousel-item h-[650px] max-w-none">
+            <div class="carousel-item h-[500px] max-w-none">
                 <img
-                src="{{ asset('img/car-image/slider-1.svg') }}"/>
+                src="{{ asset('img/car-image/slider-2.svg') }}"/>
             </div>
-            <div class="carousel-item h-[650px] max-w-none">
+            <div class="carousel-item h-[500px] max-w-none">
                 <img
-                src="{{ asset('img/car-image/slider-1.svg') }}"/>
+                src="{{ asset('img/car-image/slider-3.svg') }}"/>
             </div>
-            <div class="carousel-item h-[650px] max-w-none">
+            <div class="carousel-item h-[500px] max-w-none">
                 <img
-                src="{{ asset('img/car-image/slider-1.svg') }}"/>
+                src="{{ asset('img/car-image/slider-4.svg') }}"/>
+            </div>
             </div>
             
         </div>
         </div>
     </div>
     <!-- end Fleet -->
+
+    <!-- Testimonial -->
+    <div class="bg-[#CCD6D4] py-16 sm:py-12 pt-60 px-6 lg:px-8">
+    <h2 class="text-center text-3xl font-bold tracking-tight text-[#24565C] sm:text-3xl">APA KATA MEREKA?</h2>
+    <div class="mt-8 text-center">
+        
+    </div>
+    </div>
      
     </div>
     <!-- end header -->
