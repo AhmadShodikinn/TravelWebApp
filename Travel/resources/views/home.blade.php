@@ -41,7 +41,7 @@
             <a href="#" class="text-xl  text-white">Armada</a>
             <a href="#" class="text-xl  text-white">Ulasan</a>
             <a href="#" class="text-xl  text-white">Galeri</a>
-            
+
             <!-- dropdown language -->
             <div class="relative inline-block text-left">
                 <div>
@@ -61,7 +61,7 @@
             </div>
             <!-- end dropdown -->
 
-            
+
         </div>
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
@@ -144,7 +144,7 @@
                 <h2 class="text-left text-xl font-bold tracking-tight text-[#24565C]">Tur Antar Kota</h2>
                 <p class="text-left text-base text-gray-900">Menyediakan tur Antar kota Malang-Juanda / Jawa-Bali.</p>
             </div>
-        </div>  
+        </div>
         <div class="mx-auto max-w-xs lg:max-w-full lg:flex lg:items-center lg:gap-x-4">
         <img src="{{ asset('img/icon-car.svg') }}" alt="Vector Image" class="h-[80px] w-[80px] lg:w-auto">
             <div class="mt-4 lg:mt-0 ">
@@ -169,7 +169,7 @@
                 <h3 class="text-2xl font-bold text-white mb-4">Bromo</h3>
             </div>
             <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                <a href="#" class="relative rounded-lg h-[35px] w-[170px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
+                <a href="https://wa.me/6282232122240" class="relative rounded-lg h-[35px] w-[170px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
@@ -186,7 +186,7 @@
                 <h3 class="text-2xl font-bold text-white mb-4">Kawah Ijen</h3>
             </div>
             <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                <a href="#" class="relative rounded-lg h-[35px] w-[170px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
+                <a href="https://wa.me/6282232122240" class="relative rounded-lg h-[35px] w-[170px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
@@ -203,7 +203,7 @@
                 <h3 class="text-2xl font-bold text-white mb-4">Tumpak Sewu</h3>
             </div>
             <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                <a href="#" class="relative rounded-lg h-[35px] w-[170px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
+                <a href="https://wa.me/6282232122240" class="relative rounded-lg h-[35px] w-[170px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
@@ -220,7 +220,7 @@
                 <h3 class="text-2xl font-bold text-white mb-4">Juanda</h3>
             </div>
             <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                <a href="#" class="relative rounded-lg h-[35px] w-[170px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
+                <a href="https://wa.me/6282232122240" class="relative rounded-lg h-[35px] w-[170px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
@@ -242,7 +242,7 @@
                 <h3 class="text-2xl font-bold text-white mb-4">Malang - Batu</h3>
             </div>
             <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                <a href="#" class="relative rounded-lg h-[35px] w-[300px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
+                <a href="https://wa.me/6282232122240" class="relative rounded-lg h-[35px] w-[300px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
@@ -259,7 +259,7 @@
                 <h3 class="text-2xl font-bold text-white mb-4">Jawa - Bali</h3>
             </div>
             <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                <a href="#" class="relative rounded-lg h-[35px] w-[300px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
+                <a href="https://wa.me/6282232122240" class="relative rounded-lg h-[35px] w-[300px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
@@ -297,7 +297,7 @@
                 src="{{ asset('img/car-image/slider-4.svg') }}"/>
             </div>
             </div>
-            
+
         </div>
         </div>
     </div>
@@ -323,7 +323,7 @@
     </div>
     </div>
     <!-- end testimonial -->
-     
+
     <!-- another destination -->
     <div class="py-16 sm:py-16 pt-60 px-6 lg:px-8 bg-[#F7F7F7]">
     <h2 class="text-center text-3xl font-bold tracking-tight text-[#24565C] sm:text-3xl">DESTINASI LAINNYA</h2>
@@ -337,7 +337,7 @@
                 <h3 class="text-2xl font-bold text-white mb-4">Pantai Balekambang</h3>
             </div>
             <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                <a href="#" class="relative rounded-lg h-[35px] w-[300px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
+                <a href="https://wa.me/6282232122240" class="relative rounded-lg h-[35px] w-[300px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
@@ -353,7 +353,7 @@
                 <h3 class="text-2xl font-bold text-white mb-4">Pantai Watuleter</h3>
             </div>
             <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                <a href="#" class="relative rounded-lg h-[35px] w-[300px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
+                <a href="https://wa.me/6282232122240" class="relative rounded-lg h-[35px] w-[300px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
@@ -363,11 +363,98 @@
                 </a>
             </div>
         </div>
-        
+
     </div>
     <!-- end column 2 -->
     </div>
      <!-- end another destination -->
+
+     <!-- Galeri Kami -->
+     <div class="py-16 sm:py-16 pt-60 px-6 lg:px-8 bg-[#F7F7F7]">
+        <h2 class="py-3 text-center text-3xl font-bold tracking-tight text-[#24565C] sm:text-3xl">GALERI KAMI</h2>
+        <!-- column 5 -->
+        <div class="h-20 mt-2 grid  gap-x-6 gap-y-6 lg:grid-cols-5 lg:mx-[70px]">
+            <!-- card -->
+            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
+                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            </div>
+            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
+                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            </div>
+            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
+                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            </div>
+            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
+                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            </div>
+            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
+                <img src="{{ asset('img/bg-watuleter.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            </div>
+            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
+                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            </div>
+            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
+                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            </div>
+            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
+                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            </div>
+            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
+                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            </div>
+            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
+                <img src="{{ asset('img/bg-watuleter.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            </div>
+
+        </div>
+        <!-- end column 2 -->
+        </div>
+     <!-- end Galeri Kami -->
+     <!-- Footer -->
+     <footer class="bg-[##111F21] relative pt-8 pb-6">
+        <div class="container mx-auto px-4 py-10">
+          <div class="flex flex-wrap text-left lg:text-left">
+            <div class="w-56  px-6 mx-auto">
+                <img class="h-[80px] w-auto" src="{{ asset('img/Logo-png.png') }}" alt="">
+            </div>
+            <div class="w-full mx-auto">
+              <div class="flex flex-wrap items-top mb-6 ">
+                <div class="w-full ml-8 px-4 ">
+                    <h4 class="py-3 ml-8 text-2xl font-semibold text-[#FFFFFF] sm:text-2xl">Kunjungi media sosial kami</h4>
+                    <ul class="ml-5 list-none flex  space-x-4 px-3">
+                        <li>
+                            <a class="hover:text-blueGray-800 font-semibold block text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile"><h4 class="text-base">Facebook</h4></a>
+                        </li>
+                        <li>
+                            <a class="hover:text-blueGray-800 font-semibold block text-sm" href="https://www.instagram.com/nufitravelmalangcity/"><h4 class="text-base">Instagram</h4></a>
+                        </li>
+                        <li>
+                            <a class="hover:text-blueGray-800 font-semibold block text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile"><h4 class="text-base">Tiktok</h4></a>
+                        </li>
+                        <li>
+                            <a class="hover:text-blueGray-800 font-semibold block text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile"><h4 class="text-base">Twitter</h4></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="  px-4 items-center">
+                    <h4 class="px-6 py-3 mx text-2xl font-semibold text-[#FFFFFF] lg:py-8 sm:text-2xl">Kontak kami</h4>
+                    <ul class="list-none flex space-x-4 px-6">
+                        <li><h4>nufitravelmalangcity@gmail.com</h4>
+                        </li>
+                        <li>
+                            <h4>+62&nbsp;8223&nbsp;2122&nbsp;240</h4>
+                        </li>
+                    </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </footer>
+     <!-- end Footer -->
     </div>
     <!-- end header -->
 </div>
