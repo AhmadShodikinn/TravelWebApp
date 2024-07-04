@@ -275,11 +275,31 @@
     <!-- end Destination -->
 
     <!-- Fleet -->
-    <div class="py-16 sm:py-16 pt-60 px-6 lg:px-8 bg-cover bg-center" style="background-image: url('/img/bg-vector.svg');">
+    <div class="py-16 sm:py-16 pt-60 bg-center" style="background-image: url('/img/bg-vector.svg');">
         <h2 class="text-center text-3xl font-bold tracking-tight text-[#24565C] sm:text-3xl">ARMADA KAMI</h2>
-        
+        <div class="carousel rounded-lg">
+            <div class="carousel-item h-[650px] max-w-none">
+                <img
+                src="{{ asset('img/car-image/slider-1.svg') }}"/>
+            </div>
+            <div class="carousel-item h-[650px] max-w-none">
+                <img
+                src="{{ asset('img/car-image/slider-1.svg') }}"/>
+            </div>
+            <div class="carousel-item h-[650px] max-w-none">
+                <img
+                src="{{ asset('img/car-image/slider-1.svg') }}"/>
+            </div>
+            <div class="carousel-item h-[650px] max-w-none">
+                <img
+                src="{{ asset('img/car-image/slider-1.svg') }}"/>
+            </div>
+            
+        </div>
+        </div>
     </div>
-       
+    <!-- end Fleet -->
+     
     </div>
     <!-- end header -->
 </div>
