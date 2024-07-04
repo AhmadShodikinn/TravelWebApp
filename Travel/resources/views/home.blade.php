@@ -332,7 +332,7 @@
     <div class="mt-2 grid grid-cols-1 gap-x-6 gap-y-6 text-center lg:grid-cols-2 lg:mx-[100px]">
         <!-- card -->
         <div class="relative max-w-xs lg:max-w-full bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
-            <img src="{{ asset('img/bg-malang.jfif') }}" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
             <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out group-hover:translate-y-[-30px]">
                 <h3 class="text-2xl font-bold text-white mb-4">Pantai Balekambang</h3>
             </div>
@@ -348,7 +348,7 @@
             </div>
         </div>
         <div class="relative max-w-xs lg:max-w-full bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
-            <img src="{{ asset('img/bg-malang.jfif') }}" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            <img src="{{ asset('img/bg-watuleter.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
             <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out group-hover:translate-y-[-30px]">
                 <h3 class="text-2xl font-bold text-white mb-4">Pantai Watuleter</h3>
             </div>
