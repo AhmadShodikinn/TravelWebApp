@@ -306,13 +306,71 @@
     <!-- Testimonial -->
     <div class="bg-[#CCD6D4] py-16 sm:py-12 pt-60 px-6 lg:px-8">
     <h2 class="text-center text-3xl font-bold tracking-tight text-[#24565C] sm:text-3xl">APA KATA MEREKA?</h2>
-    <div class="mt-8 text-center">
+    <div class="mt-8 px-64">
+        <p class="text-[#24565C] text-lg text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, eligendi quidem commodi perferendis voluptatum eum nobis nemo libero molestias inventore quod ad, maiores magni ullam praesentium sapiente dolore facilis atque.
+        </p>
+    </div>
+    <div class="mt-8 px-64 text-center">
+    <div class="flex justify-center items-center space-x-2">
+        <p class="text-[#24565C] text-lg">
+        Ahmad Subagyo -
+        </p>
+        <p class="text-[#6B9499] text-lg">
+        Traveler
+        </p>
+    </div>
+    </div>
+    </div>
+    <!-- end testimonial -->
+     
+    <!-- another destination -->
+    <div class="py-16 sm:py-16 pt-60 px-6 lg:px-8 bg-[#F7F7F7]">
+    <h2 class="text-center text-3xl font-bold tracking-tight text-[#24565C] sm:text-3xl">DESTINASI LAINNYA</h2>
+    <p class="py-3 text-center text-lg font-medium text-gray-900">Kami juga melayani beberapa destinasi lainnya, seperti :</p>
+    <!-- column 2 -->
+    <div class="mt-2 grid grid-cols-1 gap-x-6 gap-y-6 text-center lg:grid-cols-2 lg:mx-[100px]">
+        <!-- card -->
+        <div class="relative max-w-xs lg:max-w-full bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
+            <img src="{{ asset('img/bg-malang.jfif') }}" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out group-hover:translate-y-[-30px]">
+                <h3 class="text-2xl font-bold text-white mb-4">Pantai Balekambang</h3>
+            </div>
+            <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                <a href="#" class="relative rounded-lg h-[35px] w-[300px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
+                    <span class="absolute inset-0 group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
+                    <span class="relative z-10">Whatsapp</span>
+                </a>
+                <a href="#" class="relative rounded-lg h-[35px] w-[300px] px-3 text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
+                    <span class="absolute inset-0 group-hover:bg-[#f7f7f7] transition-colors duration-300 ease-in-out"></span>
+                    <span class="relative z-10">Wechat</span>
+                </a>
+            </div>
+        </div>
+        <div class="relative max-w-xs lg:max-w-full bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
+            <img src="{{ asset('img/bg-malang.jfif') }}" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out group-hover:translate-y-[-30px]">
+                <h3 class="text-2xl font-bold text-white mb-4">Pantai Watuleter</h3>
+            </div>
+            <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                <a href="#" class="relative rounded-lg h-[35px] w-[300px]  px-3 text-sm font-medium text-white shadow-sm flex items-center justify-center overflow-hidden">
+                    <span class="absolute inset-0 group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
+                    <span class="relative z-10">Whatsapp</span>
+                </a>
+                <a href="#" class="relative rounded-lg h-[35px] w-[300px] px-3 text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
+                    <span class="absolute inset-0 group-hover:bg-[#f7f7f7] transition-colors duration-300 ease-in-out"></span>
+                    <span class="relative z-10">Wechat</span>
+                </a>
+            </div>
+        </div>
         
     </div>
+    <!-- end column 2 -->
     </div>
-     
+     <!-- end another destination -->
     </div>
     <!-- end header -->
 </div>
+
 </body>
 </html>
