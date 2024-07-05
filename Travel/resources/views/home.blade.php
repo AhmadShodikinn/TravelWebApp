@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asset CSS -->
     @vite('resources/css/app.css')
 
-    <!-- font -->
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -13,90 +14,90 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <!-- end font  -->
+    <!-- End Font -->
 
     <title>NUFI TRAVEL</title>
 </head>
-<body class="font-poppins" >
-<div class="container mx-auto">
-    <div class="bg-[#F7F7F7]">
-    <!-- Hero -->
-    <header class="absolute inset-x-[100px] top-0 z-50">
-        <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div class="flex lg:flex-1">
-            <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-[80px] w-auto" src="{{ asset('img/Logo-png.png') }}" alt="">
-            </a>
-        </div>
-        <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-            <img src="{{ asset('img/icon-dropdown.svg')}}" alt="Dropdown Icon" class="h-6 w-6">
-        </button>
-        </div>
-        <div class="hidden lg:flex lg:gap-x-5">
-            <a href="#" class="text-xl  text-white">Rumah</a>
-            <a href="#" class="text-xl  text-white">Layanan</a>
-            <a href="#" class="text-xl  text-white">Tujuan</a>
-            <a href="#" class="text-xl  text-white">Armada</a>
-            <a href="#" class="text-xl  text-white">Ulasan</a>
-            <a href="#" class="text-xl  text-white">Galeri</a>
-
-            <!-- dropdown language -->
-            <div class="relative inline-block text-left">
-                <div>
-                    <button type="button" id="menu-button" aria-expanded="true" aria-haspopup="true" class="inline-flex w-full justify-center gap-x-1.5 ">
-                        <img id="current-flag" src="{{ asset('img/lang-id.svg') }}" alt="Indonesian Flag" class="h-7 w-7">
-                        <img src="/img/icon-dropdown.svg" alt="Dropdown Icon" class="h-[5px] w-[10px]] self-center">
-                    </button>
-                </div>
-
-                <div id="dropdown-menu" class="hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                    <div class="py-1" role="none">
-                        <a href="#" id="change-language" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">
-                            <img src="{{ asset('img/lang-eng.png') }}" alt="English Flag" class="h-5 w-5 inline"> English
+<body class="font-poppins">
+    <div class="container mx-auto">
+        <div class="bg-[#F7F7F7]">
+            <!-- Hero -->
+            <header class="absolute inset-x-[100px] top-0 z-50">
+                <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                    <div class="flex lg:flex-1">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <span class="sr-only">Your Company</span>
+                            <img class="h-[80px] w-auto" src="{{ asset('img/Logo-png.png') }}" alt="">
                         </a>
                     </div>
-                </div>
-            </div>
-            <!-- end dropdown -->
+                    <div class="flex lg:hidden">
+                        <button id="open-mobile-menu" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                            <img src="{{ asset('img/icon-hamburger.svg')}}" alt="Dropdown Icon" class="h-6 w-6">
+                        </button>
+                    </div>
+                    <div class="hidden lg:flex lg:gap-x-5">
+                        <a href="#" class="text-xl text-white">Rumah</a>
+                        <a href="#" class="text-xl text-white">Layanan</a>
+                        <a href="#" class="text-xl text-white">Tujuan</a>
+                        <a href="#" class="text-xl text-white">Armada</a>
+                        <a href="#" class="text-xl text-white">Ulasan</a>
+                        <a href="#" class="text-xl text-white">Galeri</a>
 
+                        <!-- Dropdown language -->
+                        <div class="relative inline-block text-left">
+                            <div>
+                                <button type="button" id="menu-button" aria-expanded="true" aria-haspopup="true" class="inline-flex w-full justify-center gap-x-1.5">
+                                    <img id="current-flag" src="{{ asset('img/lang-id.svg') }}" alt="Indonesian Flag" class="h-7 w-7">
+                                    <img src="/img/icon-dropdown.svg" alt="Dropdown Icon" class="h-[5px] w-[10px] self-center">
+                                </button>
+                            </div>
 
-        </div>
-        </nav>
-        <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden" role="dialog" aria-modal="true">
-        <!-- Background backdrop, show/hide based on slide-over state. -->
-        <div class="fixed inset-0 z-50"></div>
-        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
-            </a>
-            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                <span class="sr-only">Close menu</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-            </div>
-            <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-gray-500/10">
-                <div class="space-y-2 py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                            <div id="dropdown-menu" class="hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                                <div class="py-1" role="none">
+                                    <a href="#" id="change-language" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">
+                                        <img src="{{ asset('img/lang-eng.png') }}" alt="English Flag" class="h-5 w-5 inline"> English
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End dropdown -->
+                    </div>
+                </nav>
+                <!-- Mobile menu, show/hide based on menu open state. -->
+                <div class="lg:hidden" role="dialog" aria-modal="true">
+                    <!-- Background backdrop, show/hide based on slide-over state. -->
+                    <div id="mobile-menu-backdrop" class="fixed inset-0 z-50 hidden"></div>
+                    <div id="mobile-menu" class="fixed inset-y-0 right-0 z-50 hidden w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="-m-1.5 p-1.5">
+                                <span class="sr-only">Your Company</span>
+                                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                            </a>
+                            <button id="close-mobile-menu" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                                <span class="sr-only">Close menu</span>
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-gray-500/10">
+                                <div class="space-y-2 py-6">
+                                    <a href="#" class="text-xl text-white">Rumah</a>
+                                    <a href="#" class="text-xl text-white">Layanan</a>
+                                    <a href="#" class="text-xl text-white">Tujuan</a>
+                                    <a href="#" class="text-xl text-white">Armada</a>
+                                    <a href="#" class="text-xl text-white">Ulasan</a>
+                                    <a href="#" class="text-xl text-white">Galeri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
-    </header>
+
+                
+            </header>
+            
 
     <!-- Image -->
     <div class="relative isolate px-6 pt-14 lg:px-8">
@@ -367,97 +368,117 @@
     </div>
     <!-- end column 2 -->
     </div>
-     <!-- end another destination -->
+    <!-- end another destination -->
 
-     <!-- Galeri Kami -->
-     <div class="py-16 sm:py-16 pt-60 px-6 lg:px-8 bg-[#F7F7F7]">
-        <h2 class="py-3 text-center text-3xl font-bold tracking-tight text-[#24565C] sm:text-3xl">GALERI KAMI</h2>
-        <!-- column 5 -->
-        <div class="h-20 mt-2 grid  gap-x-6 gap-y-6 lg:grid-cols-5 lg:mx-[70px]">
-            <!-- card -->
-            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
-                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
-            </div>
-            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
-                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
-            </div>
-            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
-                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
-            </div>
-            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
-                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
-            </div>
-            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
-                <img src="{{ asset('img/bg-watuleter.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
-            </div>
-            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
-                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
-            </div>
-            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
-                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
-            </div>
-            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
-                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
-            </div>
-            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
-                <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
-            </div>
-            <div class="relative h-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[400px] group">
-                <img src="{{ asset('img/bg-watuleter.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
-            </div>
-
+    <!-- Galeri Kami -->
+    <div class="px-6 lg:px-8 bg-[#F7F7F7]">
+    <h2 class="text-center text-3xl font-bold tracking-tight text-[#24565C] sm:text-3xl">GALERI KAMI</h2>
+    <div class="py-10 grid gap-x-6 gap-y-6 lg:grid-cols-5 lg:mx-[35px]">
+        <!-- card -->
+        <div class="relative w-60 h-60 bg-white shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4  group">
+            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
         </div>
-        <!-- end column 2 -->
+        <div class="relative w-60 h-60 bg-white shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4  group">
+            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
         </div>
+        <div class="relative w-60 h-60 bg-white shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4  group">
+            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+        </div>
+        <div class="relative w-60 h-60 bg-white shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4  group">
+            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+        </div>
+        <div class="relative w-60 h-60 bg-white shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4  group">
+            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+        </div>
+        <div class="relative w-60 h-60 bg-white shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4  group">
+            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+        </div>
+        <div class="relative w-60 h-60 bg-white shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4  group">
+            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+        </div>
+        <div class="relative w-60 h-60 bg-white shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4  group">
+            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+        </div>
+        <div class="relative w-60 h-60 bg-white shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4  group">
+            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+        </div>
+        <div class="relative w-60 h-60 bg-white shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4  group">
+            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+        </div>
+    </div>
+    <!-- end column 2 -->
+    </div>
      <!-- end Galeri Kami -->
+
      <!-- Footer -->
-     <footer class="bg-[##111F21] relative pt-8 pb-6">
-        <div class="container mx-auto px-4 py-10">
-          <div class="flex flex-wrap text-left lg:text-left">
-            <div class="w-56  px-6 mx-auto">
-                <img class="h-[80px] w-auto" src="{{ asset('img/Logo-png.png') }}" alt="">
+    <footer class="bg-[#111F21] relative pt-8 pb-6">
+    <div class="container px-12 py-10">
+        <div class="flex text-left gap-40 lg:text-left">
+        
+        <!-- Logo Section -->
+        <div class="px-3">
+            <img class="h-[80px] w-auto" src="{{ asset('img/Logo-png.png') }}" alt="Logo">
+        </div>
+        
+        <!-- Social Media Section -->
+        <div class="text-left">
+            <h4 class="py-3 text-lg font-medium text-[#FFFFFF]">Kunjungi media sosial kami</h4>
+            <ul class="list-none flex justify-start space-x-4">
+            <li>
+                <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile"><h4 class="text-base text-[#FFFFFF]">Facebook</h4></a>
+            </li>
+            <li>
+                <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://www.instagram.com/nufitravelmalangcity/"><h4 class="text-base text-[#FFFFFF]">Instagram</h4></a>
+            </li>
+            <li>
+                <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile"><h4 class="text-base text-[#FFFFFF]">Tiktok</h4></a>
+            </li>
+            <li>
+                <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile"><h4 class="text-base text-[#FFFFFF]">Twitter</h4></a>
+            </li>
+            </ul>
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="text-left">
+            <h4 class="py-3 text-lg font-medium text-[#FFFFFF]">Kontak kami</h4>
+            <div class="flex flex-wrap space-x-4">
+            <h4 class="font-normal text-[#FFFFFF]">nufitravelmalangcity@gmail.com</h4>
+            <h4 class="font-normal text-[#FFFFFF]">+62&nbsp;8223&nbsp;2122&nbsp;240</h4>
             </div>
-            <div class="w-full mx-auto">
-              <div class="flex flex-wrap items-top mb-6 ">
-                <div class="w-full ml-8 px-4 ">
-                    <h4 class="py-3 ml-8 text-2xl font-semibold text-[#FFFFFF] sm:text-2xl">Kunjungi media sosial kami</h4>
-                    <ul class="ml-5 list-none flex  space-x-4 px-3">
-                        <li>
-                            <a class="hover:text-blueGray-800 font-semibold block text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile"><h4 class="text-base">Facebook</h4></a>
-                        </li>
-                        <li>
-                            <a class="hover:text-blueGray-800 font-semibold block text-sm" href="https://www.instagram.com/nufitravelmalangcity/"><h4 class="text-base">Instagram</h4></a>
-                        </li>
-                        <li>
-                            <a class="hover:text-blueGray-800 font-semibold block text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile"><h4 class="text-base">Tiktok</h4></a>
-                        </li>
-                        <li>
-                            <a class="hover:text-blueGray-800 font-semibold block text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile"><h4 class="text-base">Twitter</h4></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="  px-4 items-center">
-                    <h4 class="px-6 py-3 mx text-2xl font-semibold text-[#FFFFFF] lg:py-8 sm:text-2xl">Kontak kami</h4>
-                    <ul class="list-none flex space-x-4 px-6">
-                        <li><h4>nufitravelmalangcity@gmail.com</h4>
-                        </li>
-                        <li>
-                            <h4>+62&nbsp;8223&nbsp;2122&nbsp;240</h4>
-                        </li>
-                    </ul>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
+        </div>
 
         </div>
-      </footer>
+    </div>
+    </footer>
+
      <!-- end Footer -->
     </div>
     <!-- end header -->
-</div>
+        </div>
+    </div>
 
+    <!-- Script JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ambil elemen-elemen yang diperlukan
+            const openMobileMenuButton = document.getElementById('open-mobile-menu');
+            const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
+
+            // Tambahkan event listener untuk membuka menu mobile
+            openMobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuBackdrop.classList.remove('hidden');
+            });
+
+            // Tambahkan event listener untuk menutup menu mobile
+            closeMobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+                mobileMenuBackdrop.classList.add('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
