@@ -23,7 +23,7 @@
             <!-- Hero -->
         <header class="absolute inset-x-[2px] lg:inset-x-[100px] top-0 z-50">
         <nav class="flex items-center justify-between p-6" aria-label="Global">
-            <div class="flex items-center lg:flex-1">
+            <div class="flex lg:flex-1">
                 <a href="#" class="-m-1.5 p-1.5">
                     <span class="sr-only">Nufi Travel</span>
                     <img class="h-12 w-auto lg:h-[80px] lg:w-auto md:h-20 md:w-auto mx-auto" src="{{ asset('img/Logo-png.png') }}" alt="">
@@ -40,22 +40,23 @@
             </div>
 
             <!-- Dropdown language for screens wider than lg -->
-            <div class="hidden lg:flex relative text-left">
-                <div>
-                    <button type="button" id="menu-button" aria-expanded="true" aria-haspopup="true" class="inline-flex w-full justify-center gap-x-1.5">
-                        <img id="current-flag" src="{{ asset('img/lang-id.svg') }}" alt="Indonesian Flag" class="h-7 w-7">
-                        <img src="/img/icon-dropdown.svg" alt="Dropdown Icon" class="h-[5px] w-[10px] self-center">
-                    </button>
-                </div>
+            <div class="hidden items-center pl-5 pt-2 lg:flex relative text-left">
+    <div>
+        <button type="button" id="menu-button" aria-expanded="true" aria-haspopup="true" class="inline-flex w-full justify-center gap-x-1.5">
+            <img id="current-flag" src="{{ asset('img/lang-id.svg') }}" alt="Indonesian Flag" class="h-7 w-7">
+            <img src="/img/icon-dropdown.svg" alt="Dropdown Icon" class="h-[5px] w-[10px] self-center">
+        </button>
+    </div>
 
-                <div id="dropdown-menu" class="hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                    <div class="py-1" role="none">
-                        <a href="#" id="change-language" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">
-                            <img src="{{ asset('img/lang-eng.png') }}" alt="English Flag" class="h-5 w-5 inline"> English
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div id="dropdown-menu" class=" absolute right-0 mt-5 w-auto origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+        <div class="py-1" role="none">
+            <a href="#" id="change-language"role="menuitem" tabindex="-1">
+                <img src="{{ asset('img/lang-eng.png') }}" alt="English Flag" class="h-[5px] w-[10px] self-center">
+            </a>
+        </div>
+    </div>
+</div>
+
 
             <!-- Hamburger menu for screens smaller than lg -->
             <!-- <div class="lg:hidden">
