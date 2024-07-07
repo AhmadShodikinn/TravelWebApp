@@ -24,7 +24,7 @@
         'Header-Armada' => 'OUR FLEET',
         'Header-Ulasan' => 'WHAT THEY SAY?',
         'Header-Destinasi2' => 'OTHER DESTINATIONS',
-        'Subtitle-Destinasi2' => 'We also serve several other destinations, such as:',
+        'Subtitle-Destinasi2' => 'We also serve several destinations, such as',
         'Header-Galeri' => 'OUR GALLERY',
         'Footer' => 'Visit our social media',
         'Footer2' => 'Contact us',
