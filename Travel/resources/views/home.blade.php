@@ -384,16 +384,16 @@
             
             <!-- Logo Section -->
             <div class="mb-6 lg:mb-0">
-                <img class="h-16 lg:h-24 w-auto" src="{{ asset('img/Logo-png.png') }}" alt="Logo">
+                <img class="h-20 lg:h-24 w-auto" src="{{ asset('img/Logo-png.png') }}" alt="Logo">
             </div>
 
             <!-- Social Media and Contact Section -->
             <div class="flex flex-col lg:flex-row lg:gap-28 lg:text-left w-full lg:w-auto">
 
                 <!-- Social Media Section -->
-                <div class="text-center lg:text-left mb-6 lg:mb-0 ">
+                <div class="pl-10 lg:pl-0 text-left mb-6 lg:mb-0 ">
                     <h4 class="py-3 text-lg font-medium text-[#FFFFFF]">@lang('messages.Footer')</h4>
-                    <ul class="list-none flex justify-center lg:justify-start space-x-4">
+                    <ul class="list-none flex justify-start space-x-4">
                         <li>
                             <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://www.facebook.com/yourpage">
                                 <h4 class="text-base text-[#FFFFFF]">Facebook</h4>
@@ -418,7 +418,7 @@
                 </div>
 
                 <!-- Contact Section -->
-                <div class="text-center lg:text-left">
+                <div class="pl-10 lg:pl-0 text-left">
                     <h4 class="py-3 text-lg font-medium text-[#FFFFFF]">@lang('messages.Footer2')</h4>
                     <div class="space-y-2 lg:space-y-0 lg:flex lg:space-x-4">
                         <h4 class="font-normal text-[#FFFFFF]">nufitravelmalangcity@gmail.com</h4>
