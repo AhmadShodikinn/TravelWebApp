@@ -40,79 +40,28 @@
             </div>
 
             <!-- Dropdown language for screens wider than lg -->
-            <div class="hidden items-center pl-5 pt-2 lg:flex relative text-left">
-    <div>
-        <button type="button" id="menu-button" aria-expanded="true" aria-haspopup="true" class="inline-flex w-full justify-center gap-x-1.5">
-            <img id="current-flag" src="{{ asset('img/lang-id.svg') }}" alt="Indonesian Flag" class="h-7 w-7">
-            <img src="/img/icon-dropdown.svg" alt="Dropdown Icon" class="h-[5px] w-[10px] self-center">
-        </button>
-    </div>
-
-    <div id="dropdown-menu" class=" absolute right-0 mt-5 w-auto origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-        <div class="py-1" role="none">
-            <a href="#" id="change-language"role="menuitem" tabindex="-1">
-                <img src="{{ asset('img/lang-eng.png') }}" alt="English Flag" class="h-[5px] w-[10px] self-center">
-            </a>
-        </div>
-    </div>
-</div>
-
-
-            <!-- Hamburger menu for screens smaller than lg -->
-            <!-- <div class="lg:hidden">
-                <button id="open-mobile-menu" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                    <img src="{{ asset('img/icon-hamburger.svg')}}" alt="Dropdown Icon" class="h-6 w-6">
-                </button>
-            </div> -->
-
-            <!-- Dropdown language for screens smaller than lg -->
-            <div class="lg:hidden relative inline-block text-left">
-                <div>
-                    <button type="button" id="menu-button" aria-expanded="true" aria-haspopup="true" class="inline-flex w-full justify-center gap-x-1.5">
+            <div class=" items-center pl-5 pt-2 lg:flex relative text-left">
+                <div class="relative inline-block text-left">
+                    <button type="button" id="menu-button" aria-expanded="false" aria-haspopup="true" class="inline-flex w-full justify-center gap-x-1.5">
                         <img id="current-flag" src="{{ asset('img/lang-id.svg') }}" alt="Indonesian Flag" class="h-7 w-7">
-                        <img src="/img/icon-dropdown.svg" alt="Dropdown Icon" class="h-[5px] w-[10px] self-center">
+                        <img id="dropdown-icon" src="/img/icon-dropdown.svg" alt="Dropdown Icon" class="h-[5px] w-[10px] self-center transition-transform">
                     </button>
-                </div>
 
-                <div id="dropdown-menu" class="hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                    <div class="py-1" role="none">
-                        <a href="#" id="change-language" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">
-                            <img src="{{ asset('img/lang-eng.png') }}" alt="English Flag" class="h-5 w-5 inline"> English
-                        </a>
+                    <div id="dropdown-menu" class="hidden absolute origin-top-right" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                        <div class=" bg-[#24565C]" role="none">
+                            <a href="#" id="change-language" role="menuitem" tabindex="-1" class="flex items-center gap-2 p-2 hover:bg-[#F7F7F7]">
+                                <img src="{{ asset('img/lang-id.svg') }}" alt="Indonesian" class="h-7 w-7">
+                                <!-- <span class="text-sm"></span> -->
+                            </a>
+                            <a href="#" id="change-language" role="menuitem" tabindex="-1" class="flex items-center gap-2 p-2 hover:bg-[#F7F7F7]">
+                                <img src="{{ asset('img/lang-eng.png') }}" alt="English" class="h-7 w-7">
+                                <!-- <span class="text-sm"></span> -->
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
-
-            <!-- Mobile menu, show/hide based on menu open state. -->
-            <!-- <div class="lg:hidden" role="dialog" aria-modal="true"> -->
-            <!-- Background backdrop, show/hide based on slide-over state. -->
-            <!-- <div id="mobile-menu" class="fixed inset-y-0 right-0 z-80 w-full overflow-y-auto bg-transparent px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                <div class="flex inset-y-0 right-0">
-                <a href="#" class="-m-1.5 p-1.5">
-                    <span class="sr-only">NUFI TRAVEL</span>
-                    <img class="h-8 w-auto" src="{{ asset('img/Logo-png.png') }}" alt="">
-                </a>
-                <button type="button" id="close-mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                    <span class="sr-only">Close menu</span>
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-                </div>
-                <div class="mt-6 flow-root">
-                <div class="-my-6 divide-y divide-gray-500/10">
-                    <div class="space-y-2 py-6">
-                    <a href="#" class="-mx-3 block  px-3 py-2 text-base font-semibold leading-7 text-[#24565C] hover:bg-[#24565C] hover:text-[#F7F7F7]">Rumah</a>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Layanan</a>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Tujuan</a>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Armada</a>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Ulasan</a>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Galeri</a>
-                </div>
-                </div>
-                </div>
-            </div> -->
         </header>
             
 
@@ -431,7 +380,7 @@
 
      <!-- Footer -->
      <footer class="bg-[#111F21] relative py-4 lg:py-8">
-    <div class="flex flex-col items-center lg:flex-row lg:justify-between lg:px-12 py-10">
+    <div class="flex flex-col items-center lg:flex-row lg:justify-between lg:px-16 py-10">
         
         <!-- Logo Section -->
         <div class="mb-6 lg:mb-0">
@@ -442,7 +391,7 @@
         <div class="flex flex-col lg:flex-row lg:gap-28 lg:text-left w-full lg:w-auto">
 
             <!-- Social Media Section -->
-            <div class="text-center lg:text-left mb-6 lg:mb-0 lg:pr-8">
+            <div class="text-center lg:text-left mb-6 lg:mb-0 ">
                 <h4 class="py-3 text-lg font-medium text-[#FFFFFF]">Kunjungi media sosial kami</h4>
                 <ul class="list-none flex justify-center lg:justify-start space-x-4">
                     <li>
@@ -489,24 +438,40 @@
     <!-- Script JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Ambil elemen-elemen yang diperlukan
-            const openMobileMenuButton = document.getElementById('open-mobile-menu');
-            const closeMobileMenuButton = document.getElementById('close-mobile-menu');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
+            const menuButton = document.getElementById('menu-button');
+            const dropdownMenu = document.getElementById('dropdown-menu');
+            const currentFlag = document.getElementById('current-flag');
+            const dropdownIcon = document.getElementById('dropdown-icon');
 
-            // Tambahkan event listener untuk membuka menu mobile
-            openMobileMenuButton.addEventListener('click', function() {
-                mobileMenu.classList.remove('hidden');
-                mobileMenuBackdrop.classList.remove('hidden');
+            menuButton.addEventListener('click', function() {
+                const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+                menuButton.setAttribute('aria-expanded', !isExpanded);
+                dropdownMenu.classList.toggle('hidden');
+
+                // Toggle flag to black and rotate icon
+                if (!isExpanded) {
+                    currentFlag.classList.add('filter', 'grayscale');
+                    dropdownIcon.classList.add('rotate-180');
+                    dropdownMenu.classList.add('bg-gray-100'); // Change background color
+                } else {
+                    currentFlag.classList.remove('filter', 'grayscale');
+                    dropdownIcon.classList.remove('rotate-180');
+                    dropdownMenu.classList.remove('bg-gray-100'); // Reset background color
+                }
             });
 
-            // Tambahkan event listener untuk menutup menu mobile
-            closeMobileMenuButton.addEventListener('click', function() {
-                mobileMenu.classList.add('hidden');
-                mobileMenuBackdrop.classList.add('hidden');
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.add('hidden');
+                    menuButton.setAttribute('aria-expanded', 'false');
+                    currentFlag.classList.remove('filter', 'grayscale');
+                    dropdownIcon.classList.remove('rotate-90');
+                    dropdownMenu.classList.remove('bg-gray-100'); // Reset background color
+                }
             });
         });
     </script>
+
 </body>
 </html>
