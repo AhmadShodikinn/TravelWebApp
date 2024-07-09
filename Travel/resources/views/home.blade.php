@@ -73,7 +73,7 @@
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/img/background-image/bg-bromo.jpg');"></div>
     </div>
     <!-- Content Container -->
-    <div class="relative z-10 mx-auto max-w-2xl py-32 sm:py-4 lg:py-56 text-center text-gray-900">
+    <div class="relative z-10 mx-auto max-w-2xl py-32 md:py-36 lg:py-56 text-center text-gray-900">
     <!-- Main Content -->
         <div>
             <h1 class="font-ibarra relative inline-block text-3xl lg:text-6xl font-bold tracking-tight text-white">
@@ -97,7 +97,7 @@
     <!-- stats -->
     <div id="Layanan" class="bg-[#CCD6D4] py-10 lg:py-14 pt-8 lg:pt-30 lg:px-6">
     <h2 class="text-center text-lg lg:text-3xl font-bold tracking-tight text-[#24565C]">@lang('messages.Header-Layanan')</h2>
-    <div class="mt-4 lg:mt-8 grid grid-cols-1 gap-x-7 gap-y-7 lg:text-center lg:grid-cols-3 lg:mx-[100px]">
+    <div class="mt-4 lg:mt-8 grid grid-cols-1 md:grid-cols-3 md:gap-x-2 gap-x-7 gap-y-7 lg:text-center lg:grid-cols-3 md:mx-[80px] lg:mx-[100px]">
         <div class="mx-auto max-w-xs lg:max-w-full flex items-center gap-x-4">
             <img src="{{ asset('img/icon-tour.svg') }}" alt="Vector Image" class="h-16 w-16 lg:h-[80px] lg:w-[80px]">
             <div>
@@ -128,9 +128,9 @@
     <div id="Tujuan" class="py-10 lg:py-14 px-6 lg:px-8">
     <h2 class="text-center text-lg lg:text-3xl font-bold tracking-tight text-[#24565C]">@lang('messages.Header-Destinasi')</h2>
     <p class="px-4 py-1 lg:py-3 text-center text-sm lg:text-lg font-medium text-gray-900">@lang('messages.Subtitle-Destinasi')</p>
-    <div class="mt-2 grid grid-cols-2 gap-x-6 gap-y-6 text-center lg:grid-cols-4 lg:mx-[100px]">
+    <div class="mt-2 grid grid-cols-2 gap-x-6 gap-y-6 text-center items-center lg:grid-cols-4 lg:mx-[100px]">
         <!-- card -->
-        <div class="relative max-w-xs lg:max-w-full bg-white rounded-md lg:rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-72 lg:h-[400px] group">
+        <div class="relative lg:max-w-full bg-white rounded-md lg:rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-72 lg:h-[400px] group">
             <img src="{{ asset('/img/background-image/bg-bromo.jpg') }}" alt="Popular Destination" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-25"></div>
             <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-30px]">
@@ -141,13 +141,13 @@
                     <span class="absolute inset-0 bg-[#24565C] lg:group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
-                <a href="#" class="relative rounded-lg h-[30px] w-[140px] lg:h-[35px] lg:w-[170px]  px-3 text-xs lg:text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
+                <!-- <a href="#" class="relative rounded-lg h-[30px] w-[140px] lg:h-[35px] lg:w-[170px]  px-3 text-xs lg:text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 bg-[#f7f7f7] lg:group-hover:bg-[#f7f7f7] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Wechat</span>
-                </a>
+                </a> -->
             </div>
         </div>
-        <div class="relative max-w-xs lg:max-w-full bg-white rounded-md lg:rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-72 lg:h-[400px] group">
+        <div class="relative lg:max-w-full bg-white rounded-md lg:rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-72 lg:h-[400px] group">
             <img src="{{ asset('/img/background-image/bg-kawah-ijen.jpg') }}" alt="Popular Destination" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-25"></div>
             <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-30px]">
@@ -158,13 +158,13 @@
                     <span class="absolute inset-0 bg-[#24565C] lg:group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
-                <a href="#" class="relative rounded-lg h-[30px] w-[140px] lg:h-[35px] lg:w-[170px]  px-3 text-xs lg:text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
+                <!-- <a href="#" class="relative rounded-lg h-[30px] w-[140px] lg:h-[35px] lg:w-[170px]  px-3 text-xs lg:text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 bg-[#f7f7f7] lg:group-hover:bg-[#f7f7f7] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Wechat</span>
-                </a>
+                </a> -->
             </div>
         </div>
-        <div class="relative max-w-xs lg:max-w-full bg-white rounded-md lg:rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-72 lg:h-[400px] group">
+        <div class="relative lg:max-w-full bg-white rounded-md lg:rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-72 lg:h-[400px] group">
             <img src="{{ asset('/img/background-image/bg-tumpak-sewu.jpg') }}" alt="Popular Destination" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-25"></div>
             <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-30px]">
@@ -175,13 +175,13 @@
                     <span class="absolute inset-0 bg-[#24565C] lg:group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
-                <a href="#" class="relative rounded-lg h-[30px] w-[140px] lg:h-[35px] lg:w-[170px]  px-3 text-xs lg:text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
+                <!-- <a href="#" class="relative rounded-lg h-[30px] w-[140px] lg:h-[35px] lg:w-[170px]  px-3 text-xs lg:text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 bg-[#f7f7f7] lg:group-hover:bg-[#f7f7f7] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Wechat</span>
-                </a>
+                </a> -->
             </div>
         </div>
-        <div class="relative max-w-xs lg:max-w-full bg-white rounded-md lg:rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-72 lg:h-[400px] group">
+        <div class="relative lg:max-w-full bg-white rounded-md lg:rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-72 lg:h-[400px] group">
             <img src="{{ asset('/img/background-image/bg-airport.jfif') }}" alt="Popular Destination" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-25"></div>
             <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-30px]">
@@ -192,10 +192,10 @@
                     <span class="absolute inset-0 bg-[#24565C] lg:group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
-                <a href="#" class="relative rounded-lg h-[30px] w-[140px] lg:h-[35px] lg:w-[170px]  px-3 text-xs lg:text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
+                <!-- <a href="#" class="relative rounded-lg h-[30px] w-[140px] lg:h-[35px] lg:w-[170px]  px-3 text-xs lg:text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 bg-[#f7f7f7] lg:group-hover:bg-[#f7f7f7] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Wechat</span>
-                </a>
+                </a> -->
             </div>
         </div>
     </div>
@@ -214,10 +214,10 @@
                     <span class="absolute inset-0 bg-[#24565C] lg:group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
-                <a href="#" class="relative rounded-lg h-[35px] w-[300px] px-3 text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
+                <!-- <a href="#" class="relative rounded-lg h-[35px] w-[300px] px-3 text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 bg-[#f7f7f7] group-hover:bg-[#f7f7f7] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Wechat</span>
-                </a>
+                </a> -->
             </div>
         </div>
         <div class="relative max-w-full bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[250px] lg:h-[400px] group">
@@ -231,10 +231,10 @@
                     <span class="absolute inset-0 bg-[#24565C] lg:group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
-                <a href="#" class="relative rounded-lg h-[35px] w-[300px] px-3 text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
+                <!-- <a href="#" class="relative rounded-lg h-[35px] w-[300px] px-3 text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 bg-[#f7f7f7] group-hover:bg-[#f7f7f7] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Wechat</span>
-                </a>
+                </a> -->
             </div>
         </div>
     </div>
@@ -275,13 +275,13 @@
     <h2 class="text-center text-lg lg:text-3xl font-bold tracking-tight text-[#24565C]">@lang('messages.Header-Ulasan')</h2>
     <div class="mt-8 lg:px-64">
         <p class="text-[#24565C] text-sm lg:text-lg text-center">
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, eligendi quidem commodi perferendis voluptatum eum nobis nemo libero molestias inventore quod ad, maiores magni ullam praesentium sapiente dolore facilis atque."
+            "Saya sangat terkesan dengan Nufi Travel. Mereka menyediakan paket perjalanan yang terorganisir dengan baik dan layanan pelanggan yang luar biasa. Saya merasa aman dan puas dengan setiap detail perjalanan. Sangat direkomendasikan!"
         </p>
     </div>
     <div class="mt-8 lg:px-64 text-center">
     <div class="flex justify-center items-center space-x-2">
         <p class="text-[#24565C] text-sm lg:text-lg">
-        Ahmad Subagyo -
+        Bagus Fitrah -
         </p>
         <p class="text-[#6B9499] text-sm lg:text-lg">
         Traveler
@@ -308,10 +308,10 @@
                     <span class="absolute inset-0 bg-[#24565C] lg:group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
-                <a href="#" class="relative rounded-lg h-[35px] w-[300px] px-3 text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
+                <!-- <a href="#" class="relative rounded-lg h-[35px] w-[300px] px-3 text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 bg-[#f7f7f7] group-hover:bg-[#f7f7f7] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Wechat</span>
-                </a>
+                </a> -->
             </div>
         </div>
         <div class="relative max-w-full bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[250px] lg:h-[400px] group">
@@ -324,10 +324,10 @@
                     <span class="absolute inset-0 bg-[#24565C] lg:group-hover:bg-[#24565C] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Whatsapp</span>
                 </a>
-                <a href="#" class="relative rounded-lg h-[35px] w-[300px] px-3 text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
+                <!-- <a href="#" class="relative rounded-lg h-[35px] w-[300px] px-3 text-sm font-medium text-[#24565C] shadow-sm flex items-center justify-center overflow-hidden">
                     <span class="absolute inset-0 bg-[#f7f7f7] group-hover:bg-[#f7f7f7] transition-colors duration-300 ease-in-out"></span>
                     <span class="relative z-10">Wechat</span>
-                </a>
+                </a> -->
             </div>
         </div>
     </div>
@@ -338,37 +338,37 @@
     <!-- Galeri Kami -->
     <div id="Galeri" class="px-2 lg:px-8">
     <h2 class="text-center text-lg lg:text-3xl font-bold tracking-tight text-[#24565C]">@lang('messages.Header-Galeri')</h2>
-    <div class=" py-5 lg:py-10 grid gap-x-3 lg:gap-x-6 gap-y-3 grid-cols-2 lg:grid-cols-5 lg:mx-[35px]">
+    <div class=" py-5 lg:py-10 grid gap-x-3 lg:gap-x-6 gap-y-3 grid-cols-2 md:grid-cols-5 lg:grid-cols-5 lg:mx-[35px]">
         <!-- card -->
         <div>
-            <img src="{{ asset('img/gallery-image/img-1.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-1.jpeg') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/gallery-image/img-2.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-2.jpeg') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/gallery-image/img-3.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-3.jpeg') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/gallery-image/img-4.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-4.jpeg') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
             <img src="{{ asset('img/gallery-image/img-5.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/gallery-image/img-6.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-6.jpeg') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/gallery-image/img-7.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-7.jpeg') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/gallery-image/img-8.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-8.jpeg') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/gallery-image/img-9.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-9.jpeg') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/gallery-image/img-10.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-10.jpeg') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         
         
@@ -380,8 +380,8 @@
      <!-- end Galeri Kami -->
 
      <!-- Footer -->
-     <footer class="bg-[#111F21] relative py-4 lg:py-8">
-        <div class="flex flex-col items-center lg:flex-row lg:justify-between lg:px-16 py-10">
+     <footer class="bg-[#111F21] relative pt-4 lg:pt-8">
+        <div class="flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:px-16 py-10">
             
             <!-- Logo Section -->
             <div class="mb-6 lg:mb-0">
@@ -389,29 +389,29 @@
             </div>
 
             <!-- Social Media and Contact Section -->
-            <div class="flex flex-col lg:flex-row lg:gap-28 lg:text-left w-full lg:w-auto">
+            <div class="flex flex-col md:flex-row md:justify-center md:items-center  md:gap-24 lg:flex-row lg:gap-28 lg:text-left w-full lg:w-auto">
 
                 <!-- Social Media Section -->
                 <div class="pl-10 lg:pl-0 text-left mb-6 lg:mb-0 ">
                     <h4 class="py-3 text-lg font-medium text-[#FFFFFF]">@lang('messages.Footer')</h4>
                     <ul class="list-none flex justify-start space-x-4">
                         <li>
-                            <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://www.facebook.com/yourpage">
+                            <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://www.facebook.com/profile.php?id=61562185383522" target="_blank">
                                 <h4 class="text-base text-[#FFFFFF]">Facebook</h4>
                             </a>
                         </li>
                         <li>
-                            <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://www.instagram.com/nufitravelmalangcity">
+                            <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://www.instagram.com/nufitravelmalangcity" target="_blank">
                                 <h4 class="text-base text-[#FFFFFF]">Instagram</h4>
                             </a>
                         </li>
                         <li>
-                            <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://www.tiktok.com/@yourpage">
+                            <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://www.tiktok.com/@nufitravel" target="_blank">
                                 <h4 class="text-base text-[#FFFFFF]">Tiktok</h4>
                             </a>
                         </li>
                         <li>
-                            <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://twitter.com/yourpage">
+                            <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://x.com/NufiTravel" target="_blank">
                                 <h4 class="text-base text-[#FFFFFF]">Twitter</h4>
                             </a>
                         </li>
