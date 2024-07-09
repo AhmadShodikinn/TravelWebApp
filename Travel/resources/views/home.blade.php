@@ -353,7 +353,7 @@
             <img src="{{ asset('img/gallery-image/img-4.jpeg') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/gallery-image/img-5.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-5.jpeg') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
             <img src="{{ asset('img/gallery-image/img-6.jpeg') }}" class="w-full h-full object-cover" alt="Popular Destination">
