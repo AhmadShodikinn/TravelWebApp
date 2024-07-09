@@ -48,7 +48,7 @@
                 </button>
 
                 <div id="dropdown-menu" class="hidden absolute origin-top-right" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                    <div class=" bg-[#24565C]" role="none">
+                    <div class=" bg-[#24565C] rounded-sm" role="none">
                         <a href="locale/id" id="change-language" role="menuitem" tabindex="-1" class="flex items-center gap-2 p-2 hover:bg-[#F7F7F7]">
                             <img src="{{ asset('img/lang-id.svg') }}" alt="Indonesian" class="h-7 w-7">
                             <!-- <span class="text-sm"></span> -->
@@ -70,7 +70,7 @@
     <!-- Background Image -->
     <div class="absolute inset-0 z-0">
         <div class="absolute inset-0 z-10 bg-gradient-to-b from-black/60 to-transparent"></div>
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/img/bg-bromo.jpg');"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/img/background-image/bg-bromo.jpg');"></div>
     </div>
     <!-- Content Container -->
     <div class="relative z-10 mx-auto max-w-2xl py-32 sm:py-4 lg:py-56 text-center text-gray-900">
@@ -131,7 +131,7 @@
     <div class="mt-2 grid grid-cols-2 gap-x-6 gap-y-6 text-center lg:grid-cols-4 lg:mx-[100px]">
         <!-- card -->
         <div class="relative max-w-xs lg:max-w-full bg-white rounded-md lg:rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-72 lg:h-[400px] group">
-            <img src="{{ asset('img/bg-bromo.jpg') }}" alt="Popular Destination" class="absolute inset-0 w-full h-full object-cover">
+            <img src="{{ asset('/img/background-image/bg-bromo.jpg') }}" alt="Popular Destination" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-25"></div>
             <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-30px]">
                 <h3 class="text-xl pb-[30px] lg:pb-0 lg:text-2xl font-bold text-white mb-4">Bromo</h3>
@@ -148,7 +148,7 @@
             </div>
         </div>
         <div class="relative max-w-xs lg:max-w-full bg-white rounded-md lg:rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-72 lg:h-[400px] group">
-            <img src="{{ asset('img/bg-kawah-ijen.jpg') }}" alt="Popular Destination" class="absolute inset-0 w-full h-full object-cover">
+            <img src="{{ asset('/img/background-image/bg-kawah-ijen.jpg') }}" alt="Popular Destination" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-25"></div>
             <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-30px]">
                 <h3 class="text-xl pb-[30px] lg:pb-0 lg:text-2xl font-bold text-white mb-4">Kawah Ijen</h3>
@@ -165,7 +165,7 @@
             </div>
         </div>
         <div class="relative max-w-xs lg:max-w-full bg-white rounded-md lg:rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-72 lg:h-[400px] group">
-            <img src="{{ asset('img/bg-tumpak-sewu.jpg') }}" alt="Popular Destination" class="absolute inset-0 w-full h-full object-cover">
+            <img src="{{ asset('/img/background-image/bg-tumpak-sewu.jpg') }}" alt="Popular Destination" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-25"></div>
             <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-30px]">
                 <h3 class="text-xl pb-[30px] lg:pb-0 lg:text-2xl font-bold text-white mb-4">Tumpak Sewu</h3>
@@ -182,7 +182,7 @@
             </div>
         </div>
         <div class="relative max-w-xs lg:max-w-full bg-white rounded-md lg:rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-72 lg:h-[400px] group">
-            <img src="{{ asset('img/bg-airport.jfif') }}" alt="Popular Destination" class="absolute inset-0 w-full h-full object-cover">
+            <img src="{{ asset('/img/background-image/bg-airport.jfif') }}" alt="Popular Destination" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-25"></div>
             <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-30px]">
                 <h3 class="text-xl pb-[30px] lg:pb-0 lg:text-2xl font-bold text-white mb-4">Juanda</h3>
@@ -204,8 +204,8 @@
     <div class="mt-2 grid gap-x-6 gap-y-6 text-center grid-cols-1 lg:grid-cols-2 lg:mx-[100px]">
         <!-- card -->
         <div class="relative max-w-full bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[250px] lg:h-[400px] group">
-            <img src="{{ asset('img/bg-malang.jfif') }}" alt="Popular Destination" class="absolute left-0 inset-0 w-1/2 h-full object-cover"><div class="absolute inset-0 bg-black opacity-10"></div>
-            <img src="{{ asset('img/bg-batu.jpg') }}" alt="Popular Destination" class="absolute left-2/4 inset-0 w-1/2 h-full object-cover"><div class="absolute inset-0 bg-black opacity-10"></div>
+            <img src="{{ asset('/img/background-image/bg-malang.jfif') }}" alt="Popular Destination" class="absolute left-0 inset-0 w-1/2 h-full object-cover"><div class="absolute inset-0 bg-black opacity-10"></div>
+            <img src="{{ asset('/img/background-image/bg-batu.jpg') }}" alt="Popular Destination" class="absolute left-2/4 inset-0 w-1/2 h-full object-cover"><div class="absolute inset-0 bg-black opacity-10"></div>
             <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-30px]">
                 <h3 class="text-xl pb-[30px] lg:pb-0 lg:text-2xl font-bold text-white mb-4">Malang - Batu</h3>
             </div>
@@ -221,8 +221,8 @@
             </div>
         </div>
         <div class="relative max-w-full bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[250px] lg:h-[400px] group">
-            <img src="{{ asset('img/bg-jawa.jpg') }}" alt="Popular Destination" class="absolute left-0 inset-0 w-1/2 h-full object-cover"><div class="absolute inset-0 bg-black opacity-10"></div>
-            <img src="{{ asset('img/bg-bali.jpg') }}" alt="Popular Destination" class="absolute left-2/4 inset-0 w-1/2 h-full object-cover"><div class="absolute inset-0 bg-black opacity-10"></div>
+            <img src="{{ asset('/img/background-image/bg-jawa.jpg') }}" alt="Popular Destination" class="absolute left-0 inset-0 w-1/2 h-full object-cover"><div class="absolute inset-0 bg-black opacity-10"></div>
+            <img src="{{ asset('/img/background-image/bg-bali.jpg') }}" alt="Popular Destination" class="absolute left-2/4 inset-0 w-1/2 h-full object-cover"><div class="absolute inset-0 bg-black opacity-10"></div>
             <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-30px]">
                 <h3 class="text-xl pb-[30px] lg:pb-0 lg:text-2xl font-bold text-white mb-4">Jawa - Bali</h3>
             </div>
@@ -299,7 +299,7 @@
     <div class="mt-2 grid gap-x-6 gap-y-6 text-center grid-cols-1 lg:grid-cols-2 lg:mx-[100px]">
         <!-- card -->
         <div class="relative max-w-full bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[250px] lg:h-[400px] group">
-            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            <img src="{{ asset('/img/background-image/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
             <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-30px]">
                 <h3 class="text-xl pb-[30px] lg:pb-0 lg:text-2xl font-bold text-white mb-4">Pantai Balekambang</h3>
             </div>
@@ -315,7 +315,7 @@
             </div>
         </div>
         <div class="relative max-w-full bg-white rounded-lg shadow-lg overflow-hidden lg:flex lg:items-center lg:gap-x-4 h-[250px] lg:h-[400px] group">
-            <img src="{{ asset('img/bg-watuleter.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
+            <img src="{{ asset('/img/background-image/bg-watuleter.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination"><div class="absolute inset-0 bg-black opacity-10"></div>
             <div class="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out lg:group-hover:translate-y-[-30px]">
                 <h3 class="text-xl pb-[30px] lg:pb-0 lg:text-2xl font-bold text-white mb-4">Pantai Watuleter</h3>
             </div>
@@ -341,35 +341,36 @@
     <div class=" py-5 lg:py-10 grid gap-x-3 lg:gap-x-6 gap-y-3 grid-cols-2 lg:grid-cols-5 lg:mx-[35px]">
         <!-- card -->
         <div>
-            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-1.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-2.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-3.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-4.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-5.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-6.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-7.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-8.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-9.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
         <div>
-            <img src="{{ asset('img/bg-balekambang.jpg') }}" class="w-full h-full object-cover" alt="Popular Destination">
+            <img src="{{ asset('img/gallery-image/img-10.png') }}" class="w-full h-full object-cover" alt="Popular Destination">
         </div>
+        
         
     </div>
     <!-- end column 2 -->
@@ -400,7 +401,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://www.instagram.com/yourpage">
+                            <a class="hover:text-blueGray-800 font-normal block text-sm" href="https://www.instagram.com/nufitravelmalangcity">
                                 <h4 class="text-base text-[#FFFFFF]">Instagram</h4>
                             </a>
                         </li>
