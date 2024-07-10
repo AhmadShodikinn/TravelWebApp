@@ -16,6 +16,7 @@
     <!-- End Font -->
 
     <title>NUFI TRAVEL</title>
+    <link rel="shortcut icon" href="{{ asset('img/Logo-png.png') }}" type="image/x-icon">
 </head>
 <body class="font-poppins w-full lg:h-screen">
     <div class="mx-auto">
